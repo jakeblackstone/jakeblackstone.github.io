@@ -1,0 +1,52 @@
+---
+
+---
+
+<button
+  id="theme-toggle"
+  type="button"
+  aria-label="Toggle color theme"
+  aria-pressed="false"
+>
+  <span class="icon" aria-hidden="true">◐</span>
+</button>
+
+<style>
+  #theme-toggle {
+    background: var(--surface);
+    color: var(--fg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: var(--space-2) var(--space-3);
+    cursor: pointer;
+    transition: background-color 120ms ease;
+  }
+
+  #theme-toggle:hover {
+    background: var(--border);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    #theme-toggle {
+      transition: none;
+    }
+  }
+</style>
+
+<script>
+  const btn = document.getElementById("theme-toggle");
+  if (btn) {
+    const sync = () => {
+      const theme = document.documentElement.dataset.theme ?? "dark";
+      btn.setAttribute("aria-pressed", String(theme === "light"));
+    };
+    sync();
+    btn.addEventListener("click", () => {
+      const current = document.documentElement.dataset.theme ?? "dark";
+      const next = current === "light" ? "dark" : "light";
+      document.documentElement.dataset.theme = next;
+      localStorage.setItem("theme", next);
+      sync();
+    });
+  }
+</script>

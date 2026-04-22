@@ -1,0 +1,61 @@
+---
+
+---
+
+<a class="resume-download" href="/resume.pdf" download>
+  <svg
+    class="icon"
+    aria-hidden="true"
+    focusable="false"
+    width="18"
+    height="18"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.75"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  >
+    <path d="M12 4v12"></path>
+    <path d="M7 11l5 5 5-5"></path>
+    <path d="M5 20h14"></path>
+  </svg>
+  <span>Download resume (PDF)</span>
+</a>
+
+<style>
+  .resume-download {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-2) var(--space-3);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--surface);
+    color: var(--fg);
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: background-color 120ms ease;
+  }
+
+  .resume-download:hover,
+  .resume-download:focus-visible {
+    background: var(--border);
+  }
+
+  .resume-download:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+
+  .icon {
+    flex: none;
+    color: var(--fg-muted);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .resume-download {
+      transition: none;
+    }
+  }
+</style>
