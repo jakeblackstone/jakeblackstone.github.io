@@ -1,0 +1,77 @@
+---
+interface Photo {
+  src: string;
+  alt: string;
+}
+
+// TODO(asset): replace placeholder photos + alt text with real work.
+const photos: Photo[] = [
+  { src: "/images/photo-1.jpg", alt: "Steel girders beneath a bridge span" },
+  { src: "/images/photo-2.jpg", alt: "Flat-lay of a desk with keyboard, monitor, and notebook" },
+  { src: "/images/photo-3.jpg", alt: "Waterfall against a mossy cliff face" },
+];
+---
+
+<ul class="grid" role="list">
+  {
+    photos.map((photo) => (
+      <li>
+        <img
+          src={photo.src}
+          alt={photo.alt}
+          width="800"
+          height="800"
+          loading="lazy"
+          decoding="async"
+        />
+      </li>
+    ))
+  }
+</ul>
+
+<style>
+  .grid {
+    list-style: none;
+    padding: 0;
+    margin-inline: auto;
+    margin-block: var(--space-5) 0;
+    max-width: 85%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-3);
+  }
+
+  .grid li {
+    margin: 0;
+  }
+
+  .grid img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: var(--radius);
+    box-shadow: 0 1px 2px rgb(0 0 0 / 0.12), 0 2px 8px rgb(0 0 0 / 0.08);
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .grid img {
+      transition:
+        transform 180ms ease,
+        box-shadow 180ms ease;
+    }
+
+    .grid img:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 2px 4px rgb(0 0 0 / 0.14), 0 6px 16px rgb(0 0 0 / 0.14);
+    }
+  }
+
+  @media (max-width: 480px) {
+    .grid {
+      grid-template-columns: 1fr;
+      max-width: 100%;
+    }
+  }
+</style>

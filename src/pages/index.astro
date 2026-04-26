@@ -2,6 +2,7 @@
 import Base from "../layouts/Base.astro";
 import Section from "../components/Section.astro";
 import LinksBar from "../components/LinksBar.astro";
+import PhotoGrid from "../components/PhotoGrid.astro";
 import ResumeDownload from "../components/ResumeDownload.astro";
 import { Content as About } from "../content/about.md";
 import { Content as Resume } from "../content/resume.md";
@@ -9,9 +10,13 @@ import { Content as Resume } from "../content/resume.md";
 
 <Base title="jakeblackstone" description="Personal site of Jake Blackstone.">
   <div class="intro">
-    <div class="headshot" aria-hidden="true">
-      {/* TODO(asset): replace with real headshot */}
-    </div>
+    <img
+      class="headshot"
+      src="/images/headshot.jpg"
+      width="240"
+      height="240"
+      alt="Portrait of Jake Blackstone"
+    />
     <div class="intro-text">
       <h1>Jake Blackstone</h1>
       <p class="tagline">Back-end engineer. Queens, NY.</p>
@@ -30,6 +35,8 @@ import { Content as Resume } from "../content/resume.md";
       <ResumeDownload />
     </div>
   </Section>
+
+  <PhotoGrid />
 </Base>
 
 <style>
@@ -41,10 +48,11 @@ import { Content as Resume } from "../content/resume.md";
   }
 
   .headshot {
-    width: 96px;
+    width: 160px;
+    height: auto;
     aspect-ratio: 1 / 1;
     border-radius: 50%;
-    background: var(--surface);
+    object-fit: cover;
     border: 1px solid var(--border);
   }
 
@@ -71,7 +79,7 @@ import { Content as Resume } from "../content/resume.md";
     }
 
     .headshot {
-      width: 112px;
+      width: 200px;
     }
 
     .intro-text h1 {
