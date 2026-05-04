@@ -85,6 +85,28 @@ const { title, open = true } = Astro.props;
     color: var(--fg);
   }
 
+  .body :global(p) {
+    margin-bottom: var(--space-4);
+  }
+
+  .body :global(p:last-of-type) {
+    margin-bottom: 0;
+  }
+
+  .body :global(h2) {
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--fg-muted);
+    margin-top: var(--space-5);
+    margin-bottom: var(--space-3);
+  }
+
+  .body :global(h2:first-child) {
+    margin-top: 0;
+  }
+
   @media (prefers-reduced-motion: reduce) {
     .caret {
       transition: none;

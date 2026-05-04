@@ -1,11 +1,43 @@
-<!--
-  TODO(asset): replace with real bio.
--->
 
-I'm Jake — a back-end engineer based in Queens, NY. I work mostly in C#/.NET and Python, and I like building small, durable things that get out of the user's way.
+### Who I Am
+<br/>
 
-## Interests
+Hi! I'm Jake, I'm a software engineer based in NYC with 4+ years of professional software development and design experience. I'm passionate about delivering code that's clean, secure, efficient, easily maintainable, and that gives the end user the best experience possible.
 
-- Transit systems, maps, and the quiet infrastructure that makes cities work
-- Alt-history as a design constraint for fiction
-- Calligraphy and hand-lettered type
+<br/>
+
+### What I Do
+<br/>
+
+At the moment, I'm at [Vertafore](https://www.vertafore.com/), where I focus on legacy system modernization, remediation of technical debt, custom REST API design and cross-product integrations. More recently, I've been working on integrating Agentic AI-enhanced workflows and data insights into both the developer and user side.
+
+<br/>
+
+### My Background
+<br/>
+
+I grew up in the Phoenix, AZ area, and it was in 4th Grade that I first discovered my love of technology and computing. My introduction to coding came in the form of learning Java via video game modding, writing custom programs for my TI-84 calculator, and tinkering with a Raspberry Pi.
+
+From there, that led me to enroll in CS classes in high school, and eventually the decision to pursue software as a career. After graduating from ASU in 2022 with my BS in Computer Science, I moved to Denver for two years, but got an opportunity to relocate to the NYC area in Summer 2024.
+
+Outside of software, my interests and hobbies include board games, scenic train rides, hiking & nature exploration, baking, volunteering, and spending time with my partner and my cat, Boots.
+
+<br/>
+
+### How I Work
+<br/>
+
+Within my career, **adaptability** and **diversification** have been core components of my ethos: I have strong experience across the stack in a diverse array of languages and technologies, and am well-seasoned in working on agile teams in various industries, from consulting to fintech and beyond.
+
+All these experiences have taught me the immense value of not only having strong competency in the fundamentals, but also the willingness to experiment and think outside the box. It's also taught me an important lesson, both in life, but especially in this field: <u>Success means you never, ever stop learning and growing</u>.
+
+<br/>
+
+### Get In Touch
+<br/>
+
+If you want to get to know me better and talk about my background, feel free to connect with me on LinkedIn or reach me via any of my available methods of contact. Additionally, my resume is available to download below for your convenience. I appreciate your time and look forward to speaking with you!
+
+
+
+
