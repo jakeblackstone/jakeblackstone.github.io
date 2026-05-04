@@ -11,8 +11,8 @@ November 2021 – May 2022 · Tempe, AZ
 
 ## Skills
 
-**Languages:** C#, Java, Python, JavaScript/TypeScript, VB.NET<br>
-**Platforms & APIs:** .NET, REST/HTTP, Astro, SQL<br>
+**Languages:** C#, Java, Python, JavaScript/TypeScript, VB.NET, SQL, Apex<br>
+**Platforms & APIs:** .NET, EF Core, Astro, React, Salesforce Lightning <br>
 **Infrastructure:** Azure DevOps, GitHub Actions
 
 ## Education

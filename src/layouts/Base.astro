@@ -21,8 +21,16 @@ const ogImage = new URL("/images/headshot.jpg", siteUrl).href;
     <title>{title}</title>
     {description && <meta name="description" content={description} />}
     <meta name="generator" content={Astro.generator} />
-    <meta name="theme-color" content="#fdfdfc" media="(prefers-color-scheme: light)" />
-    <meta name="theme-color" content="#0e0f12" media="(prefers-color-scheme: dark)" />
+    <meta
+      name="theme-color"
+      content="#fdfdfc"
+      media="(prefers-color-scheme: light)"
+    />
+    <meta
+      name="theme-color"
+      content="#0e0f12"
+      media="(prefers-color-scheme: dark)"
+    />
     <meta property="og:type" content="website" />
     <meta property="og:title" content={title} />
     {description && <meta property="og:description" content={description} />}
@@ -50,7 +58,9 @@ const ogImage = new URL("/images/headshot.jpg", siteUrl).href;
       <slot />
     </main>
     <footer>
-      <small>&copy; {new Date().getFullYear()} Jake Blackstone</small>
+      <small
+        >&copy; {new Date().getFullYear()} Jake Blackstone. Built with <a href="https://astro.build" target="_blank" rel="noopener noreferrer" aria-label="Astro" class="astro-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" height="1em" width="1em" aria-hidden="true" class="astro-logo"><path fill="currentColor" d="m243.56 151.08-49.74-143a7.91 7.91 0 0 0-5.79-5.19c-.43-.09-.87-.13-1.31-.14-2.45 0-4.77 1.38-6.48 3.87l-24.51 36.11C145 29.62 134.8 24 123.08 24c-19.46 0-35.3 15.54-35.3 34.64v.4L63.24 22.64c-1.7-2.5-4.03-3.88-6.48-3.87-.44.01-.88.05-1.31.14a7.91 7.91 0 0 0-5.79 5.19L.12 151.08a8.06 8.06 0 0 0 3.07 9.26l117.09 75.81a14.11 14.11 0 0 0 15.44 0l117.09-75.81a8.05 8.05 0 0 0 3.07-9.26l-.32-.00Zm-120.48 64.69L56.58 175.3 24.4 149.97l98.68-18.14 98.71 18.17-32.22 25.33-66.49 40.44Z"/></svg>Astro</a>.</small
+      >
     </footer>
 
     <style>
@@ -84,6 +94,23 @@ const ogImage = new URL("/images/headshot.jpg", siteUrl).href;
         padding: var(--space-4);
         color: var(--fg-muted);
         text-align: center;
+      }
+
+      .astro-link {
+        color: inherit;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.2em;
+        vertical-align: middle;
+      }
+
+      .astro-link:hover {
+        color: var(--fg);
+      }
+
+      .astro-logo {
+        vertical-align: -0.15em;
       }
 
       @media (min-width: 640px) {
