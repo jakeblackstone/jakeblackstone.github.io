@@ -1,19 +1,22 @@
-## Experience
+## Work History
+*For more detail on my work experience, check out my full resume below!*
 
 **Software Engineer II** — Vertafore<br>
-September 2024 – Present · New York, NY
+September 2024 – **Present** · New York, NY
 
-**Junior Software Engineer** — Publicis Sapient<br>
+**Software Engineer** — Publicis Sapient<br>
 July 2022 – September 2024 · Denver, CO
 
-**Software Engineer Intern** — CFM Inc.<br>
+**Software Engineer (Intern)** — CFM Inc.<br>
 November 2021 – May 2022 · Tempe, AZ
 
 ## Skills
 
-**Languages:** C#, Java, Python, JavaScript/TypeScript, VB.NET, SQL, Apex<br>
-**Platforms & APIs:** .NET, EF Core, Astro, React, Salesforce Lightning <br>
-**Infrastructure:** Azure DevOps, GitHub Actions
+**Languages:** C#, Python, JavaScript/TypeScript, Java, SQL Server<, VB.NET<br>
+**Platforms & APIs:** .NET Core, WPF, EF Core, Astro, Node, Salesforce Lightning<br>
+**AI**: Claude Code, OpenAI API, GitHub Copilot, OpenCode, MCP<br>
+**Testing**: Locust, Selenium, xUnit, MSTest, Bruno, Postman<br>
+**Infrastructure:** Azure, GitHub Actions
 
 ## Education
 
